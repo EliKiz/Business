@@ -1,0 +1,98 @@
+.expert {
+    min-height: 889px;
+    padding: 80px 0;
+    background: url('../img/background/slider.png') center center/ cover no-repeat;
+    &__title {
+        text-align: center;
+    }
+    &__wrapper {
+        max-width: 843px;
+        height: 64px;
+        margin: 25px auto auto auto ;
+        border-radius: 5px;
+        border: solid 1px #fff;
+        align-items: center;
+        
+    }
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        align-items:center;
+        font-size: 14px;
+        font-weight: 400;
+        color: #ffffff;
+        padding: 0 32px;
+            
+        li {
+            list-style-type: none;
+            padding-right: 20px;
+            line-height: 40px;
+            border-right: solid 1px #fff;
+            &:last-child {
+            border-right: none;
+            }   
+            a {
+                text-decoration: none;
+                color: #ffff;
+                &:hover {
+                    font-weight: 400;
+                    color: $main-color;
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+        
+    }
+    &__slider {
+    margin-top: 50px;
+    }
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateX(-50%);
+        right: auto;
+        left: 25px;
+        border: none;
+        
+        img {
+            width: 18px;
+            height: 59px;
+        }
+    }
+    .next {
+        right: 0;
+        left: auto;
+    }
+    .tns-item {
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 947px;
+            height: 560px;
+            object-fit: cover;
+            
+        }
+    }
+    .tns-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 20px;
+        button {
+            
+            border: 1px solid $main-color;
+            border-radius: 100%;
+            width: 15px;
+            height: 15px;
+        
+        }
+        .tns-nav-active {
+            background-color: $main-color;
+        }
+    }
+    button {
+        background-color: unset;
+    }
+}

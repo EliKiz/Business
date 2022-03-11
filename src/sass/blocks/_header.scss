@@ -1,0 +1,48 @@
+.header {
+    padding: 20px 0;
+    position: relative;
+    &__wrapper {
+        display: grid;
+        grid-template: auto/ repeat(5, minmax(160px, 1fr));
+        gap: 0 30px;
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 28px minmax(28px, auto);
+        gap: 0 11px;
+        &-img {
+            margin-top: 3px;
+        }
+        &-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #242424;
+        }
+        &-text {
+            
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+    .hamburger {
+        display: none;
+        position: fixed;
+        
+        flex-direction: column-reverse;
+        height: 15px;
+        width: 20px;
+        align-items: flex-end;
+        justify-content: space-between;
+        top: 20px;
+        right: 20px;
+        z-index: 1;
+        span {
+            width: 20px;
+            height: 3px;
+            background-color: rgb(0, 0, 0)
+        }
+        span.long {
+            width: 25px;
+        }
+    }
+}

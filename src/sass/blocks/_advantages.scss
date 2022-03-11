@@ -1,0 +1,56 @@
+.advantages {
+    padding: 80px 0;
+    &__wrapper, &__content {
+        display: flex;
+        column-gap: 31px;
+        
+    }
+    &__item {
+        position: relative;
+        display: flex;
+        flex: 0 0 360px;
+        flex-direction: column;
+        border: 1px solid #ececec;
+        align-items: center;
+        padding: 0 90px 36px;
+        overflow:hidden;
+        &:last-child {
+            padding: 0 50px 36px;
+        }
+        &:hover {
+            box-shadow: 10px 5px 5px #7de5ff;
+            transition: all 0.5s ease;
+            
+        }
+        &-title {
+            text-align: center;
+        }
+        &-round {
+            right: -40px;
+            bottom: -40px;
+            position: absolute;
+            
+        }
+    }
+    &__arrow, &__arrows  {
+        width: 170px;
+        height: 50px;
+        position: relative;
+        padding-top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        @include arrow;
+    }
+    &__arrows {
+        padding-top: 20px;
+    }
+    &__title {
+        padding-top: 30px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 48.1px;
+        font-weight: 700;
+        color: #393939;
+    }
+}
