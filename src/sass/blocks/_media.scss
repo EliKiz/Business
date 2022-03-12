@@ -19,6 +19,30 @@
             flex: 0 0 300px;
         }
     }
+    .business {
+        &__wrapper {
+            
+            flex-wrap:wrap;
+        }
+        &__item {
+            display: flex;
+            width: 50%;
+        }
+    }
+    .variant {
+        
+        &__wrapper {
+            &-title {
+                font-size: 1.4rem;
+            }
+        }
+        &__contant {
+            &-title {
+                font-size: 1.4rem;
+        }
+    }
+        
+    }
 }
 @media (max-width: 992px) { 
     .container {
@@ -63,13 +87,42 @@
         }
         .prev, .next {
             
-            left: -15px;
+            left: -13px;
         
         }
         .next {
             right: -39px;
             left: auto;
         }
+    }
+    .business {
+        &__item {
+            
+            &-title  {
+                padding: 0 20px;
+            }
+        }
+    }
+    .variant {
+        flex-direction: column;
+        &__leftBG,  &__rightBG {
+            padding: 0 20px;
+            max-width: 100%;
+        }
+    }
+    .footer {
+        &__grid {
+            grid-template: repeat(3, auto) / 1fr ;
+            gap: 15px 50px;
+        }
+        #divider {
+            grid-column: unset;
+        }
+        #policy {
+            grid-column: unset;
+            justify-self: center;
+        }
+        
     }
 }
 @media (max-width: 768px) { 
@@ -115,6 +168,18 @@
             display: none;
         }
     }
+    .business {
+        &__wrapper {
+            display: flex;
+            margin-top: 44px;
+            flex-wrap:wrap;
+            flex-direction: column;
+        }
+        &__item {
+            display: flex;
+            width: 100%;
+        }
+    }
 }
 @media (max-width: 576px) {
     .container {
@@ -132,6 +197,39 @@
         &__item {
             flex: 0 0 280px;
             padding: 0 41px 36px;
+        }
+    }
+    .variant {
+        padding-top: 0;
+        &__title {
+            font-size: 24px;
+            top: 80px;
+        }
+        &__wrapper {
+            margin-right: 25px;
+            &-title {
+                font-size: 1rem;
+            }
+            &-subtitle {
+                font-size: 17px;
+            }
+                
+            
+        }
+        &__content {
+            margin-left: 25px;
+            &-title {
+                font-size: 1rem;
+            }
+            &-subtitle {
+                font-size: 17px;
+            }
+        }
+    }
+    .start {
+        &__title {
+            font-size: 20px;
+            line-height: 24px;
         }
     }
 }
